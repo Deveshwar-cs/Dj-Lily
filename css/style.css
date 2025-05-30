@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: brown;
+}
+
+/* --- Navbar Base Styles --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  background-color: #800d0d;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 10;
+}
+
+/* --- Logo Title --- */
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+/* --- Nav Links --- */
+.navlink {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navlink li {
+  position: relative;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navlink a:hover {
+  color: #ffc488;
+}
+
+/* --- Hamburger Icon --- */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navlink {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    background-color: #800d0d;
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    animation: slideDown 0.3s ease-in-out forwards;
+  }
+
+  .navlink.show {
+    display: flex;
+  }
+
+  .navlink li {
+    margin: 12px 0;
+  }
+
+  .service-icon {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+/* --- Slide Down Animation for Menu --- */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

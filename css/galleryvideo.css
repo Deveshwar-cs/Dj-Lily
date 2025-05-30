@@ -1,0 +1,64 @@
+:root {
+  --gallery-bg: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+  --text-color: #ffffff;
+  --video-bg: #121212;
+  --border-radius: 16px;
+  --highlight-color: #ff6666;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styling */
+.video-section {
+  padding: 60px 5%;
+  background: var(--gallery-bg);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  margin: 40px 20px;
+  box-shadow: var(--shadow);
+}
+
+.video-section h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff6666; /* Matches your h2 style */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Grid Layout for Videos */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+/* Video Styling */
+.video-container video {
+  width: 100%;
+  background-color: var(--video-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-container video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 102, 102, 0.5); /* Same highlight as gallery hover */
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+  .video-section {
+    padding: 40px 20px;
+  }
+
+  .video-section h3 {
+    font-size: 2rem;
+  }
+
+  .video-container {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,139 @@
+.footer {
+  background: linear-gradient(135deg, #141414, #3a3a3a);
+  color: #f0f0f0;
+  padding: 60px 20px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.4);
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 90px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 300px;
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  border-bottom: 2px solid #ff6666;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: #dcdcdc;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6666;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #dcdcdc;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #ff6666;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.youtube-promo {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #010f0a, #ff6666);
+  color: #ffffff;
+  border-radius: 20px;
+  margin: 40px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.youtube-promo:hover {
+  transform: translateY(-5px);
+}
+
+.youtube-promo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-promo p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+.youtube-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #1f1b1bcc;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.youtube-btn:hover {
+  background-color: #ffffff;
+  color: #020202;
+  transform: scale(1.05);
+}

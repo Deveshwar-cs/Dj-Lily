@@ -1,0 +1,6 @@
+# dj booking
+# for booking contact method used is:- insta ,facebook ,phone number ,whatsapp ,snapchat
+# services provided:- wedding, parties, birthday (section)
+# for payment section.
+# section of adding working photo() section:
+# youtube section for showing work.

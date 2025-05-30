@@ -1,0 +1,91 @@
+.welcome-section {
+  height: 90vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, -0.25), rgba(0, 0, 0, 0.3)),
+    url(../images/welcomeimg.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  animation: fadeInUp 1.2s ease;
+}
+
+.welcome-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-content p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #ddd;
+}
+
+.btn-book {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #000;
+  background-color: #ffd000;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn-book:hover {
+  background-color: #ffcc00;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+  .welcome-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome-content p {
+    font-size: 1.1rem;
+  }
+
+  .btn-book {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
